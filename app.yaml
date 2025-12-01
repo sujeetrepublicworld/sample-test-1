@@ -1,8 +1,7 @@
 runtime: custom
 env: flex
-service: sample-test
+service: default
 
-# Network configuration
 network:
   name: projects/dev-test-371111/global/networks/test-public-vpc
 
