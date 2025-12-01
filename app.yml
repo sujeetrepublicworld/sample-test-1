@@ -1,14 +1,17 @@
 runtime: custom
 env: flex
 service: sample-test
+
+# Network configuration
 network:
-  name: projects/republic-network-host/global/networks/dev
-  subnetwork_name: republic-subnet-dev
+  name: projects/dev-test-371111/global/networks/test-public-vpc
+
 automatic_scaling:
   min_num_instances: 1
   max_num_instances: 3
   cpu_utilization:
     target_utilization: 0.50
+
 resources:
   cpu: 2
   memory_gb: 4
